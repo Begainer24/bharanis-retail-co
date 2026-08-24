@@ -1,0 +1,51 @@
+product_id,product_name,category,supplier,unit_cost,unit_price,stock_quantity,units_sold_last_month,turnover_rate
+P001,Yoga Mat,Electronics,Peak Distributors,40.51,50.47,52,173,3.326923076923077
+P002,Action Figure,Electronics,Summit Wholesale,9.61,37.17,119,129,1.084033613445378
+P003,Sketch Pad,Electronics,Orbit Traders,108.82,213.38,214,56,0.2616822429906542
+P004,Highlighter Pack,Stationery,Peak Distributors,122.37,11.88,412,40,0.0970873786407767
+P005,Water Bottle,Toys,Peak Distributors,27.54,287.59,172,26,0.1511627906976744
+P006,Building Blocks Set,Sportswear,Nova Supplies,57.05,109.75,135,11,0.08148148148148149
+P007,Highlighter Pack,Stationery,Nova Supplies,146.1,119.77,282,75,0.26595744680851063
+P008,Sketch Pad,Toys,Orbit Traders,107.16,23.29,116,197,1.6982758620689655
+P009,Sticky Notes,Electronics,Orbit Traders,130.64,120.24,232,162,0.6982758620689655
+P010,Air Fryer,Home & Kitchen,Peak Distributors,56.51,204.35,359,174,0.48467966573816157
+P011,Building Blocks Set,Stationery,Orbit Traders,82.45,81.0,236,97,0.4110169491525424
+P012,Running Shoes,Stationery,Orbit Traders,104.27,254.43,397,14,0.03526448362720403
+P013,Remote Control Car,Electronics,Peak Distributors,63.17,29.19,467,145,0.31049250535331907
+P014,Smart Watch,Home & Kitchen,Summit Wholesale,62.37,275.22,234,36,0.15384615384615385
+P015,Running Shoes,Home & Kitchen,Orbit Traders,113.02,166.3,382,149,0.3900523560209424
+P016,Water Bottle,Stationery,Summit Wholesale,57.49,299.22,70,130,1.8571428571428572
+P017,Laptop Stand,Electronics,Nova Supplies,129.86,54.32,81,174,2.1481481481481484
+P018,Water Bottle,Stationery,Nova Supplies,60.79,182.81,239,135,0.5648535564853556
+P019,Running Shoes,Stationery,Nova Supplies,103.64,43.22,453,137,0.30242825607064017
+P020,Running Shoes,Toys,Nova Supplies,47.56,55.87,1,184,184.0
+P021,Running Shoes,Stationery,Orbit Traders,78.61,40.86,320,76,0.2375
+P022,Blender,Stationery,Orbit Traders,27.16,231.13,276,199,0.7210144927536232
+P023,Blender,Electronics,Peak Distributors,75.85,42.44,185,78,0.42162162162162165
+P024,Remote Control Car,Electronics,Orbit Traders,132.31,284.62,43,187,4.348837209302325
+P025,Laptop Stand,Electronics,Orbit Traders,23.62,147.83,281,42,0.1494661921708185
+P026,Running Shoes,Stationery,Summit Wholesale,144.83,279.38,386,186,0.48186528497409326
+P027,Coffee Maker,Toys,Summit Wholesale,149.3,198.46,224,132,0.5892857142857143
+P028,Highlighter Pack,Electronics,Orbit Traders,37.58,108.04,301,141,0.4684385382059801
+P029,Remote Control Car,Stationery,Orbit Traders,6.04,215.27,30,58,1.9333333333333333
+P030,Building Blocks Set,Electronics,Peak Distributors,15.27,79.02,342,124,0.36257309941520466
+P031,Coffee Maker,Stationery,Orbit Traders,109.89,265.89,295,121,0.4101694915254237
+P032,Remote Control Car,Sportswear,Summit Wholesale,32.61,38.11,220,90,0.4090909090909091
+P033,Water Bottle,Sportswear,Summit Wholesale,130.26,25.71,334,165,0.4940119760479042
+P034,Yoga Mat,Electronics,Summit Wholesale,110.59,242.17,55,63,1.1454545454545455
+P035,Coffee Maker,Home & Kitchen,Summit Wholesale,25.33,63.21,236,63,0.2669491525423729
+P036,Building Blocks Set,Sportswear,Nova Supplies,12.34,299.79,428,3,0.007009345794392523
+P037,Building Blocks Set,Home & Kitchen,Orbit Traders,63.93,149.59,442,102,0.23076923076923078
+P038,Desk Lamp,Home & Kitchen,Summit Wholesale,5.31,123.22,474,200,0.4219409282700422
+P039,Highlighter Pack,Toys,Summit Wholesale,106.01,221.85,401,142,0.3541147132169576
+P040,Laptop Stand,Home & Kitchen,Orbit Traders,48.02,290.93,296,188,0.6351351351351351
+P041,Action Figure,Electronics,Peak Distributors,13.29,179.41,257,135,0.5252918287937743
+P042,Bluetooth Speaker,Electronics,Nova Supplies,128.44,29.87,34,172,5.0588235294117645
+P043,Remote Control Car,Sportswear,Nova Supplies,141.53,175.21,296,152,0.5135135135135135
+P044,Desk Lamp,Stationery,Nova Supplies,65.79,179.26,267,80,0.299625468164794
+P045,Running Shoes,Home & Kitchen,Peak Distributors,39.61,124.78,343,165,0.48104956268221577
+P046,Sticky Notes,Sportswear,Peak Distributors,139.71,281.36,4,117,29.25
+P047,Sketch Pad,Stationery,Nova Supplies,15.62,71.81,135,33,0.24444444444444444
+P048,Air Fryer,Electronics,Orbit Traders,58.58,55.75,426,139,0.32629107981220656
+P049,Sticky Notes,Stationery,Nova Supplies,101.84,170.83,477,169,0.35429769392033544
+P050,Yoga Mat,Home & Kitchen,Peak Distributors,21.74,41.04,283,39,0.13780918727915195
