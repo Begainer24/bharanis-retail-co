@@ -13,7 +13,7 @@ This project is a hands-on sandbox for learning:
 
 ## Roadmap
 
-- [ ] Phase 1: Generate synthetic sales & inventory data
+- [X] Phase 1: Generate synthetic sales & inventory data
 - [ ] Phase 2: Clean and analyze data with Python
 - [ ] Phase 3: Add AI-generated plain-English insights
 - [ ] Phase 4: Automate testing with GitHub Actions
