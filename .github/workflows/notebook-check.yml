@@ -1,0 +1,27 @@
+name: Notebook Check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  run-notebook:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run the notebook end-to-end
+        run: |
+          pip install nbconvert
+          jupyter nbconvert --to notebook --execute notebooks/02_cleaning_eda.ipynb --output executed_check.ipynb
