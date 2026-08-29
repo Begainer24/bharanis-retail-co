@@ -21,4 +21,4 @@ This project is a hands-on sandbox for learning:
 
 ## Status
 
-🚧 In progress — building toward an analytics portfolio.
+🚧 In progress — building an analytics portfolio and working through GitHub certification prep.
