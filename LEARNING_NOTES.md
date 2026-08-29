@@ -91,3 +91,41 @@ Branching, PRs, and merging are core **GitHub Foundations** exam topics. Today w
 
 ### Next up: Phase 4
 Options considered: README/documentation polish, GitHub Actions (CI/CD), or fixing the reproducibility bug.
+
+## Phase 4 — GitHub Actions / CI-CD (Aug 29, 2026)
+
+**Goal:** Learn GitHub Actions — automatically checking that my code still works every time I push.
+
+### What I learned
+- **GitHub Actions** = an automated "robot inspector" that runs checks on your code every time you push or open a PR — no manual work needed
+- Workflow files live in a specific folder: `.github/workflows/`
+- Workflows are written in **YAML** — a simple `key: value` format that uses indentation (not brackets/commas) to show structure
+- A workflow file needs:
+  - `name:` — label for the workflow
+  - `on:` — the trigger (what event starts it, e.g. `push` or `pull_request` to `main`)
+  - `jobs:` — one or more tasks to run
+  - `runs-on:` — a fresh, temporary virtual machine GitHub spins up just for this job
+  - `steps:` — the actual sequence of actions (checkout code, set up Python, install dependencies, run checks)
+- Built my first real workflow: **notebook-check.yml**
+  - Triggers on every push/PR to `main`
+  - Checks out the repo, sets up Python 3.13, installs `requirements.txt`, then runs `notebooks/02_cleaning_eda.ipynb` end-to-end using `nbconvert`
+  - If any cell in the notebook errors out, the whole check fails — this is CI (Continuous Integration) doing its job
+- Pushed straight to `main` this time (not every change needs a branch/PR — fine for small, safe, solo changes)
+- **First run succeeded on the first try** ✅ — all steps passed in 42 seconds
+- Got a **deprecation warning** (Node.js 20 → 24) — learned to read warnings even when the run passes; not urgent, just a note for later (bump action versions: `checkout@v5`, `setup-python@v6` when available)
+
+### New terms
+| Term | Meaning |
+|---|---|
+| GitHub Actions | Automated workflows that run on events like push/PR |
+| Workflow | A YAML file defining what to automatically check/run |
+| YAML | Simple `key: value` config format using indentation |
+| CI (Continuous Integration) | Automatically testing code every time it changes, to catch breakage early |
+| Job / Step | A job is a task; steps are the ordered actions inside it |
+| Runner | The temporary virtual machine GitHub uses to execute a job |
+
+### Certification relevance
+GitHub Actions is its own certification track. Workflow syntax, triggers, jobs/steps, and runners are core exam topics — today was hands-on, not just theory.
+
+### Next up: Phase 5
+Options to consider: README/documentation polish, fixing the notebook reproducibility bug (random seed), or expanding CI (e.g. adding a linter, or running checks on every PR before merge is even allowed).
