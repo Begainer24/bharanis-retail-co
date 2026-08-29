@@ -21,4 +21,4 @@ This project is a hands-on sandbox for learning:
 
 ## Status
 
-🚧 In progress — this is an active learning project.
+🚧 In progress — building toward an analytics portfolio.
