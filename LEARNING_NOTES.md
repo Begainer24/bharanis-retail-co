@@ -170,3 +170,39 @@ Merge conflicts are one of the most commonly tested GitHub Foundations topics �
 - GitHub Issues (task/bug tracking)
 - README / Markdown formatting basics
 - `.gitignore` — what it's for and why
+
+### Addendum — GitHub Issues (closing out Foundations prep)
+
+**What I learned**
+- **Issues** = a task/bug tracker built into GitHub, using the same Markdown as READMEs
+- Filed a real bug as Issue #2: the notebook reproducibility problem flagged back in Phase 3
+- Wrote it in standard bug-report format: description, Steps to reproduce, Expected behavior, Fix idea
+- Fixed the actual bug: added `np.random.seed(42)` right after imports in the notebook
+- **Verified the fix with `md5`** — ran the notebook twice, compared file hashes, got an identical match both times, proving the output is now reproducible
+- Created a branch `fix/notebook-random-seed`, committed with a special phrase in the message:
+```
+  Fix notebook reproducibility with fixed random seed
+
+  Closes #2
+```
+- Learned that `Closes #2` / `Fixes #2` / `Resolves #2` in a commit or PR description is a **magic keyword** GitHub watches for — merging it into the default branch **automatically closes that Issue**
+- Opened and merged the PR — confirmed Issue #2 closed automatically, no manual clicking needed
+
+**Real-world troubleshooting**
+- Got stuck in a `dquote>` terminal prompt from an unclosed multi-line string — learned to recover with a closing `"` or `Ctrl+C`, and to prefer `-m "..." -m "..."` (multiple `-m` flags) over multi-line strings typed directly into the terminal
+
+**New terms**
+| Term | Meaning |
+|---|---|
+| Issue | A tracked task/bug/request, using Markdown, discussable and closeable |
+| Closing keyword | `Closes #N` / `Fixes #N` / `Resolves #N` in a commit/PR — auto-closes that Issue on merge |
+| `md5` | Command that fingerprints a file's exact content — identical hashes mean identical content |
+
+### GitHub Foundations prep — status: core topics covered
+- [x] Repositories, commits, push/pull
+- [x] Branching
+- [x] Pull Requests & merging
+- [x] Merge conflicts
+- [x] GitHub Actions (CI)
+- [x] Markdown & .gitignore
+- [x] Issues (with auto-close via commit keywords)
