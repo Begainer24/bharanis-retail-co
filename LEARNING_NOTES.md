@@ -129,3 +129,44 @@ GitHub Actions is its own certification track. Workflow syntax, triggers, jobs/s
 
 ### Next up: Phase 5
 Options to consider: README/documentation polish, fixing the notebook reproducibility bug (random seed), or expanding CI (e.g. adding a linter, or running checks on every PR before merge is even allowed).
+
+## Phase 5 — Merge Conflicts (Aug 29, 2026)
+
+**Goal:** Deliberately create and resolve a merge conflict — the #1 real-world Git headache, and a core certification topic.
+
+### What I learned
+- A **merge conflict** happens when two branches change the *same line* of the *same file* differently since they diverged — Git can't auto-decide, so it stops and asks
+- Created it on purpose:
+  - Branch `conflict-demo-a`: edited the README's Status line one way, committed
+  - Switched to `main`: edited the *same line* a different way, committed
+  - Ran `git merge conflict-demo-a` → conflict triggered
+- Learned to read Git's conflict markers inside the file:
+```
+  <<<<<<< HEAD (Current Change)
+  version from the branch I'm currently on
+  =======
+  version coming in from the other branch
+  >>>>>>> conflict-demo-a (Incoming Change)
+```
+- Resolved it manually — wrote a new combined line, deleted all the conflict markers
+- `git add <file>` during a conflict has a second meaning: it tells Git "I've resolved this, this is final" (not just "stage for commit")
+- Ran `git commit` (no `-m`) to finish the merge — this opens a pre-filled commit message in **Vim**, a terminal text editor
+- Learned to survive Vim: press `Esc`, type `:wq`, press `Enter` to save and quit (or `:q!` to quit without saving)
+- This created a **merge commit** — unlike normal commits (one parent), a merge commit has **two parents**, since it stitches two diverged histories back together
+- Cleaned up: deleted the now-merged branch locally, pushed the resolved `main` to GitHub
+
+### New terms
+| Term | Meaning |
+|---|---|
+| Merge conflict | Same line changed differently on two branches — Git needs a human decision |
+| Conflict markers | `<<<<<<<`, `=======`, `>>>>>>>` — show both competing versions inline |
+| Merge commit | A commit with two parents, created when reconciling diverged branches |
+| Vim | Terminal-based text editor Git opens for commit messages when no `-m` is given |
+
+### Certification relevance
+Merge conflicts are one of the most commonly tested GitHub Foundations topics — and the hardest to understand without actually living through one. Today was hands-on, safe practice in a throwaway branch.
+
+### Still to cover for GitHub Foundations
+- GitHub Issues (task/bug tracking)
+- README / Markdown formatting basics
+- `.gitignore` — what it's for and why
